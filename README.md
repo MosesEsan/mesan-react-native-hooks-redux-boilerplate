@@ -2,7 +2,7 @@
 
 Boilerplate for a React Native iOS and Android app using Redux
 
-### DemoInline-style: 
+### Demo
 ![Demo](https://github.com/MosesEsan/mesan-react-native-hooks-redux-boilerplate/blob/master/demo.gif "demo")
 
 ### Tutorial
