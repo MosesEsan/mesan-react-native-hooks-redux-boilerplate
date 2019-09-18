@@ -1,112 +1,34 @@
-# Tutorial 1a : React Native with React Hooks and Redux Boilerplate
+# Tutorial 1b : How to structure your React Native projects.
 
-Boilerplate for a React Native iOS and Android app using Redux
-
-### Demo
-![Demo](https://github.com/MosesEsan/mesan-react-native-hooks-redux-boilerplate/blob/master/demo.gif "demo")
 
 ### Tutorial
-<ul>
-  <li><a href="#step1">Step 1: Create React Native Project</a></li>
-  <li><a href="#step2">Step 2: Install Dependencies</a></li>
-  <li><a href="#step3">Step 3: Create Folder Structure</a></li>
-  <li><a href="#step4">Step 4: Create Your First Action</a></li>
-  <li><a href="#step5">Step 5: Create Your First Reducer</a></li>
-  <li><a href="#step6">Step 6: Create Your Store</a></li>
-  <li><a href="#step7">Step 7: Create Your Component</a></li>
-  <li><a href="#step8">Step 8: Link It All Together</a></li>
-  <li><a href="#step9">Step 9: Test</a></li>
-</ul>
 
-<a name="step1"></a>
-### Step 1: Create React Native Project
+Available on my <a href="https://medium.com/mesan-digital/tutorial-1b-how-to-structure-your-react-native-projects-491c759ff933" target="_blank">blog</a>.
 
-Open terminal and run
-```bash
-expo init ProjectName
-cd ProjectName
-```
+### Introduction
 
-<a name="step2"></a>
-### Step 2: Install Dependencies
+When it comes to React Native, I always organize my projects by feature/module. 
 
-In your project root, run
-```bash
-npm i --save redux react-redux redux-thunk axios
-```
+Two of the main reasons I organize my projects this way are:
+1. Makes my project clean and easy to navigate
+2. Makes modules reusable
 
-<a name="step3"></a>
-### Step 3: Create Folder Structure
+The link below gives a better understanding and explains the advantages of organizing your project in this manner.
 
-In your project root create an app folder. In the app folder create an <b>actions.js</b>, <b>reducers.js</b> <b>store.js</b> files and a <b>components</b> folder and <b>instructions.json</b>..
+<a href="https://jaysoo.ca/2016/02/28/organizing-redux-application/" target="_blank">Three Rules For Structuring (Redux) Applications</a>.
+
+### Folder Structure
+
+In the project root, an app folder is created, this folder will hold all codes relating to the app. In this folder, we create multiple files and folders.
+
+####Folders
+Assets — This folder will hold all the assets, this includes fonts, images etc.
+
+Components — This folder will contain components used across multiple modules, this folder will not contain any component that is only used by a specific module.
+
+Modules — This folder will contain all the modules.
+
+Redux — This folder will contain the rootReducer and store files for redux.
 
 
-<a name="step4"></a>
-### Step 4: Create Your First Action
-
-Actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using store.dispatch().
-Action creators are exactly that — functions that create actions.
-<br>
-Updated the <b>actions.js</b> file, in here we will create our actions and action creators.
-
-```javascript
-export const DATA_AVAILABLE = 'DATA_AVAILABLE';
-
-export const addData = (data) => ({
-    type: DATA_AVAILABLE,
-    data
-});
-
-```
-
-<a name="step5"></a>
-### Step 5: Create Your First Reducer
-
-The reducers are in charge of updating the state of the app based on the actions passed to the store.
-
-The combineReducers helper function turns an object whose values are different reducing functions into a single reducing function you can pass to createStore. 
-
-Available on my <a href="https://medium.com/@mosesesan/tutorial-1a-react-native-with-react-hooks-and-redux-boilerplate-75014ca8dee4" target="_blank">blog</a>.
-
-<a name="step6"></a>
-### Step 6: Create Your Store
-
-…the actions represent the facts about “what happened” and the reducers that update the state according to those actions.
-
-The Store is the object that brings them together.
-
-Update <b>store.js</b> file. In this file, create the redux store by importing the root reducer and injecting the Redux Thunk middleware.
-
-Available on my <a href="https://medium.com/@mosesesan/tutorial-1a-react-native-with-react-hooks-and-redux-boilerplate-75014ca8dee4" target="_blank">blog</a>.
-
-<a name="step7"></a>
-### Step 7: Create Your Component
-
-In your components folder create a js file <b>home.js</b>
-
-Available on my <a href="https://medium.com/@mosesesan/tutorial-1a-react-native-with-react-hooks-and-redux-boilerplate-75014ca8dee4" target="_blank">blog</a>.
-
-<a name="step8"></a>
-### Step 8: Link It All Together
-
-The App.js file is the entry point into the app. In this file, the redux store is connected to the Redux provider, giving the app access to the redux state.
-
-The app’s router is wrapped with the Provider.
-
-The <Provider /> makes the Redux store available to any nested components that have been wrapped in the connect() function.
-
-Update App.js file.
-
-Available on my <a href="https://medium.com/@mosesesan/tutorial-1a-react-native-with-react-hooks-and-redux-boilerplate-75014ca8dee4" target="_blank">blog</a>.
-
-<a name="step9"></a>
-### Step 9: Test
-
-Run the command below to test the app.
-This will start a development server for you, and print a QR code in your terminal. If you are using the Expo app, you can scan the QR code.
-
-```bash
-$ expo start
-
-```
-
+Read the rest of the tutorial on my <a href="https://medium.com/mesan-digital/tutorial-1b-how-to-structure-your-react-native-projects-491c759ff933" target="_blank">blog</a>.
