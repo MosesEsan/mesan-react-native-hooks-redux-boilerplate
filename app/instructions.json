@@ -1,0 +1,40 @@
+{
+  "instructions": [
+    {
+      "title": "Create React Native Project",
+      "description": "expo init react-hooks-redux-boilerplate"
+    },
+    {
+      "title": "Install Dependencies",
+      "description": "In your project root, run npm i --save redux react-redux redux-thunk axios"
+    },
+    {
+      "title": "Create Folder Structure",
+      "description": "In your project root create an app folder. In the app folder create an actions.js, reducers.js store.js files and a components folder and instructions.json."
+    },
+    {
+      "title": "Create your first action",
+      "description": "Actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using store.dispatch(). Action creators are exactly that - functions that create actions. Updated the actions.js file, in here we will create our actions and action creators."
+    },
+    {
+      "title": "Create your first reducer",
+      "description": "The reducers are in charge of updating the state of the app based on the actions passed to the store. - Redux Reducers \nThe combineReducers helper function turns an object whose values are different reducing functions into a single reducing function you can pass to createStore.\n Updated reducers.js file."
+    },
+    {
+      "title": "Create Store",
+      "description": "…the actions represent the facts about 'what happened' and the reducers that update the state according to those actions.\nThe Store is the object that brings them together.- Redux Store \nUpdated store.js file. In this file, create the redux store by importing the root reducer and injecting the Redux Thunk middleware."
+    },
+    {
+      "title": "Create your component",
+      "description": "In your components folder create a js file 'home.js'"
+    },
+    {
+      "title": "Link it all together",
+      "description": "The App.js file is the entry point into the app. In this file, the redux store is connected to the Redux provider, giving the app access to the redux state.\nThe app's router is wrapped with the Provider. \nThe <Provider /> makes the Redux store available to any nested components that have been wrapped in the connect() function. - React Redux Provider\nUpdate App.js file."
+    },
+    {
+      "title": "Update your main files",
+      "description": "Run the command 'expo start' to test the app. \nThis will start a development server for you, and print a QR code in your terminal. If you are using the Expo app, you can scan the QR code."
+    }
+  ]
+}
