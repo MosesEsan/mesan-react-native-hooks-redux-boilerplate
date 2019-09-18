@@ -21,7 +21,7 @@ The link below gives a better understanding and explains the advantages of organ
 
 In the project root, an app folder is created, this folder will hold all codes relating to the app. In this folder, we create multiple files and folders.
 
-####Folders
+#### Folders
 Assets — This folder will hold all the assets, this includes fonts, images etc.
 
 Components — This folder will contain components used across multiple modules, this folder will not contain any component that is only used by a specific module.
