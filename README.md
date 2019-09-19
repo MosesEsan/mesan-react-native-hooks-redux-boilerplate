@@ -1,9 +1,7 @@
-# Tutorial 1a : React Native with React Hooks and Redux Boilerplate
-
-Boilerplate for a React Native iOS and Android app using Redux
+# Tutorial 1c : Adding Navigation to your React Native App.
 
 ### Demo
-![Demo](https://github.com/MosesEsan/mesan-react-native-hooks-redux-boilerplate/blob/master/demo.gif "demo")
+![Demo](https://github.com/MosesEsan/mesan-react-native-hooks-redux-boilerplate/blob/tutorial_1c/demo.gif "demo")
 
 ### Tutorial
 <ul>
@@ -32,7 +30,9 @@ cd ProjectName
 
 In your project root, run
 ```bash
-npm i --save redux react-redux redux-thunk axios
+npm i --save redux react-redux redux-thunk axios react-navigation react-navigation-stack
+expo install react-native-gesture-handler react-native-reanimated
+
 ```
 
 <a name="step3"></a>
@@ -66,7 +66,7 @@ The reducers are in charge of updating the state of the app based on the actions
 
 The combineReducers helper function turns an object whose values are different reducing functions into a single reducing function you can pass to createStore. 
 
-Available on my <a href="https://medium.com/@mosesesan/tutorial-1a-react-native-with-react-hooks-and-redux-boilerplate-75014ca8dee4" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/mesan-digital/tutorial-1c-adding-navigation-to-your-react-native-app-1716b5de722e" target="_blank">blog</a>.
 
 <a name="step6"></a>
 ### Step 6: Create Your Store
@@ -77,14 +77,14 @@ The Store is the object that brings them together.
 
 Update <b>store.js</b> file. In this file, create the redux store by importing the root reducer and injecting the Redux Thunk middleware.
 
-Available on my <a href="https://medium.com/@mosesesan/tutorial-1a-react-native-with-react-hooks-and-redux-boilerplate-75014ca8dee4" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/mesan-digital/tutorial-1c-adding-navigation-to-your-react-native-app-1716b5de722e" target="_blank">blog</a>.
 
 <a name="step7"></a>
 ### Step 7: Create Your Component
 
-In your components folder create a js file <b>home.js</b>
+In your components folder create a 3 js files <b>welcome.js</b>, <b>home.js</b> and <b>index.js</b>
 
-Available on my <a href="https://medium.com/@mosesesan/tutorial-1a-react-native-with-react-hooks-and-redux-boilerplate-75014ca8dee4" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/mesan-digital/tutorial-1c-adding-navigation-to-your-react-native-app-1716b5de722e" target="_blank">blog</a>.
 
 <a name="step8"></a>
 ### Step 8: Link It All Together
@@ -97,7 +97,7 @@ The <Provider /> makes the Redux store available to any nested components that h
 
 Update App.js file.
 
-Available on my <a href="https://medium.com/@mosesesan/tutorial-1a-react-native-with-react-hooks-and-redux-boilerplate-75014ca8dee4" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/mesan-digital/tutorial-1c-adding-navigation-to-your-react-native-app-1716b5de722e" target="_blank">blog</a>.
 
 <a name="step9"></a>
 ### Step 9: Test
