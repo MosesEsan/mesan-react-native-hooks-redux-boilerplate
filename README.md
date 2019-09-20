@@ -47,7 +47,7 @@ In your project root create an app folder. In the app folder create an <b>action
 Actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using store.dispatch().
 Action creators are exactly that — functions that create actions.
 <br>
-Updated the <b>actions.js</b> file, in here we will create our actions and action creators.
+Update the <b>actions.js</b> file, in here we will create our actions and action creators.
 
 ```javascript
 export const DATA_AVAILABLE = 'DATA_AVAILABLE';
